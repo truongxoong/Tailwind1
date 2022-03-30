@@ -17,14 +17,13 @@ quick.forEach(function (e) {
     let listImage = list.querySelector("img");
     let listName = list.querySelector("h3");
     let listPrice = list.querySelector("p span");
-    console.log(list);
     quickImg.src = listImage.src;
     quickName.innerHTML = listName.innerHTML;
     quickPrice.innerHTML = listPrice.innerHTML;
     quickView.style.transform = "scale(1)";
   });
 });
-
+// close quick product
 closeQuick.addEventListener("click", function () {
   quickView.style.transform = "scale(0)";
 });
