@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TailWind1/detail</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <script
+      src="https://kit.fontawesome.com/e5dad05767.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/e5dad05767.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header -->
+    <section>
+      <div
+        class="p-3 flex justify-between bg-yellow-300 md:w-4/6 md:m-auto md:items-center border-b md:bg-white"
+      >
+        <div>
+          <h1 class="text-xl font-medium md:text-4xl md:font-bold">
+            Shop <span class="text-orange-500">Day</span>
+          </h1>
+        </div>
+        <div
+          id="listMenu"
+          class="fixed top-0 right-0 w-1/2 h-screen bg-white text-black hidden md:block md:static md:w-auto md:h-auto md:bg-white z-10"
+        >
+          <ul class="flex flex-col items-center h-full md:flex-row md:text-lg">
+            <li class="p-8 md:p-4 border-b md:border-none">
+              <a href="" class="hover:text-amber-600">Trang Chủ</a>
+            </li>
+            <li class="p-8 md:p-4 border-b md:border-none">
+              <a href="" class="hover:text-amber-600">Sản Phẩm</a>
+            </li>
+            <li class="p-8 md:p-4 border-b md:border-none">
+              <a href="" class="hover:text-amber-600">Tin tức</a>
+            </li>
+            <li class="p-8 md:p-4 border-b md:border-none">
+              <a href="" class="hover:text-amber-600">Liên Hệ</a>
+            </li>
+            <li class="p-8 md:p-4 border-b md:border-none">
+              <a href="" class="hover:text-amber-600">Hướng Dẫn</a>
+            </li>
+            <li class="p-8 md:p-4 border-b md:border-none">
+              <a href="" class="hover:text-amber-600">Tính Năng</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex">
+          <div class="pl-2">
+            <i class="pl-4 fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="pl-2">
+            <i class="pl-4 fa-solid fa-user"></i>
+          </div>
+          <div class="pl-2 relative">
+            <i class="pl-4 fa-solid fa-cart-shopping"></i>
+            <p
+              class="absolute -top-[10px] left-[33px] w-5 h-5 flex justify-center items-center text-xs rounded-full bg-amber-400"
+            >
+              0
+            </p>
+          </div>
+          <div id="menuTop" class="pl-4 z-10 md:hidden">
+            <i class="fa-solid fa-bars z-10"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- detail product -->
+    <section>
+      <div class="p-2 md:p-0 md:w-8/12 m-auto">
+        <div class="grid grid-cols-1 pb-4 md:grid-cols-2 md:gap-x-10">
+          <div class="w-full overflow-hidden">
+            <div class="w-full h-[400px] md:w-full md:h-[600px]">
+              <img
+                class="w-full h-full object-cover imageDetail"
+                src="../img/detail1.png"
+                alt=""
+              />
+            </div>
+            <div class="flex my-2 w-[500px]">
+              <div class="border border-red-500 w-[100px] ListImgDetail">
+                <img class="object-cover" src="../img/detail1.png" alt="" />
+              </div>
+              <div class="w-[100px] ml-2 ListImgDetail">
+                <img class="object-cover" src="../img/detail2.png" alt="" />
+              </div>
+              <div class="w-[100px] ml-2 ListImgDetail">
+                <img class="object-cover" src="../img/detail3.png" alt="" />
+              </div>
+              <div class="w-[100px] ml-2 ListImgDetail">
+                <img class="object-cover" src="../img/detail4.png" alt="" />
+              </div>
+              <div class="w-[100px] ml-2 ListImgDetail">
+                <img class="object-cover" src="../img/detail6.png" alt="" />
+              </div>
+              <div class="w-[100px] ml-2 ListImgDetail">
+                <img class="object-cover" src="../img/detail7.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2 class="text-lg font-medium py-2 md:text-[25px]">Mũ len</h2>
+            <div class="text-amber-600 text-sm">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="flex items-center pt-3 md:py-8">
+              <p class="text-lg font-normal">$100- $150</p>
+              <span class="text-xs px-3 line-through text-gray-500"
+                >$170 - $210</span
+              >
+              <span class="p-1 text-white text-sm bg-red-500">Sale 25%</span>
+            </div>
+            <div class="flex pt-3">
+              <p class="md:text-lg">Mã giảm giá</p>
+              <div class="pl-5">
+                <button class="bg-red-200 text-red-500 px-5 md:px-10">
+                  $5
+                </button>
+                <button class="bg-red-200 text-red-500 px-5 md:px-10">
+                  $15
+                </button>
+                <button class="bg-red-200 text-red-500 px-5 md:px-10">
+                  $25
+                </button>
+              </div>
+            </div>
+            <div class="flex pt-3 md:pt-5">
+              <p class="md:text-lg">vận chuyển</p>
+              <div class="pl-6 md:pl-8">
+                <i class="fa-solid fa-people-carry-box"></i>
+                <p>FreeShip cho đơn hàng trên $100</p>
+              </div>
+            </div>
+            <div class="flex pt-3 items-center md:pt-8">
+              <p class="md:text-lg">Size</p>
+              <div class="pl-[76px]">
+                <button class="border p-1 text-sm m-1 md:text-lg">
+                  S(30-40kg,<1m5)
+                </button>
+                <button class="border p-1 text-sm m-1 md:text-lg">
+                  L(40-50kg, <1m6)
+                </button>
+                <button class="border p-1 text-sm m-1 md:text-lg">
+                  M(50-60kg, <1m7)
+                </button>
+                <button class="border p-1 text-sm m-1 md:text-lg">
+                  XL(>60kg, >1m5)
+                </button>
+              </div>
+            </div>
+            <div class="flex pt-3 md:pt-8">
+              <p class="md:text-lg">Số lượng</p>
+              <div class="pl-[45px] flex items-center">
+                <input
+                  class="focus:outline-none border w-[50px] px-2"
+                  type="number"
+                  value="1"
+                  min="1"
+                />
+                <p class="text-sm pl-2 md:text-base md:pl-10">
+                  1000 sản phẩm có sẵn
+                </p>
+              </div>
+            </div>
+            <div class="flex pt-3 md:pt-8">
+              <p class="md:text-lg">Mẫu</p>
+              <div class="pl-[75px]">
+                <button class="p-1 border m-1 md:text-lg">Màu trắng</button>
+                <button class="p-1 border m-1 md:text-lg">Màu Đỏ</button>
+                <button class="p-1 border m-1 md:text-lg">Màu Xanh</button>
+                <button class="p-1 border m-1 md:text-lg">Màu Cam</button>
+                <button class="p-1 border m-1 md:text-lg">Màu Hồng</button>
+              </div>
+            </div>
+            <div class="pt-3 flex justify-center md:pt-[150px]">
+              <div
+                class="py-1 px-3 bg-red-200 border-red-500 border hover:bg-red-400 md:py-3 md:px-6 cursor-pointer"
+              >
+                Thêm vào giỏ hàng
+              </div>
+              <div
+                class="py-1 px-3 bg-red-500 ml-3 text-white md:py-3 md:px-6 cursor-pointer"
+              >
+                Mua ngay
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 py-4 border-y border-[#ddd] md:border-0">
+          <div class="md:border-y md:py-8 md:grid md:grid-cols-2">
+            <div class="flex items-center justify-center md:justify-start">
+              <div
+                class="w-[70px] h-[70px] rounded-full overflow-hidden bg-red-200 md:w-[100px] md:h-[100px]"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  src="../img/logo1.png"
+                  alt=""
+                />
+              </div>
+              <div class="pl-5 md:pl-2">
+                <h3 class="font-medium text-red-500 md:text-2xl">ShopDay</h3>
+                <div class="text-xs md:top-3 md:text-sm">
+                  <button>
+                    <i class="fa-solid fa-message"></i>
+                    Chat Ngay
+                  </button>
+                  <button class="pl-2">
+                    <i class="fa-solid fa-store"></i>
+                    Xem Shop
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 text-sm pt-4 pl-10 md:text-lg">
+              <div>
+                <p>đánh giá <span class="text-red-400">7,2k</span></p>
+              </div>
+              <div>
+                <p>sản phẩm <span class="text-red-400">56</span></p>
+              </div>
+              <div>
+                <p>tỉ lệ phản hồi <span class="text-red-400">80%</span></p>
+              </div>
+              <div>
+                <p>người theo dõi <span class="text-red-400">6k</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex">
+            <div class="w-full md:w-[80%]">
+              <div class="md:w-[50%]">
+                <h3 class="py-3 font-medium md:text-2xl">Chi tiết sản phẩm</h3>
+                <div>
+                  <div class="flex text-sm md:text-lg">
+                    <p class="text-gray-400 w-[100px] overflow-hidden">
+                      Danh mục
+                    </p>
+                    <span class="text-gray-700">Mũ</span>
+                  </div>
+                  <div class="flex text-sm md:text-lg">
+                    <p class="text-gray-400 w-[100px] overflow-hidden">
+                      Xuất xứ
+                    </p>
+                    <span class="text-gray-700">Việt Nam</span>
+                  </div>
+                  <div class="flex text-sm md:text-lg">
+                    <p class="text-gray-400 w-[100px] overflow-hidden">
+                      Phong cách
+                    </p>
+                    <span class="text-gray-700">Thể thao</span>
+                  </div>
+                  <div class="flex text-sm md:text-lg">
+                    <p class="text-gray-400 w-[100px] overflow-hidden">
+                      Loại trang phục
+                    </p>
+                    <span class="text-gray-700">Mũ</span>
+                  </div>
+                  <div class="flex text-sm md:text-lg">
+                    <p class="text-gray-400 w-[100px] overflow-hidden">mẫu</p>
+                    <span class="text-gray-700">in</span>
+                  </div>
+                  <div class="flex text-sm md:text-lg">
+                    <p class="text-gray-400 w-[100px] overflow-hidden">Mùa</p>
+                    <span class="text-gray-700">Đông</span>
+                  </div>
+                  <div class="flex text-sm md:text-lg">
+                    <p class="text-gray-400 w-[100px] overflow-hidden">
+                      Chất liệu
+                    </p>
+                    <span class="text-gray-700">Nỉ</span>
+                  </div>
+                  <div class="flex text-sm md:text-lg">
+                    <p class="text-gray-400 w-[100px] overflow-hidden">
+                      Gửi từ
+                    </p>
+                    <span class="text-gray-700">Hà Nội</span>
+                  </div>
+                </div>
+              </div>
+              <div class="md:w-[50%]">
+                <h3 class="py-3 font-medium md:text-2xl">Mô tả sản phẩm</h3>
+                <div>
+                  <p class="text-gray-400 md:text-lg">Thông tin sản phẩm:</p>
+                  <span class="text-sm md:text-lg"
+                    >Bộ Quần Áo Thun Phông Nam Cổ Tròn Tay Lỡ Phối Màu Thể Thao
+                    Thiết kế thời trang, đơn giản không kém phần hiện đại Kiểu
+                    dáng gọn nhẹ, năng động Chất vải thun mềm mại, dễ thấm hút
+                    mồ hôi</span
+                  >
+                </div>
+                <div>
+                  <p class="text-gray-400 pt-3 md:text-lg">
+                    Hướng dẫn chọn size:
+                  </p>
+                  <span class="text-sm md:text-lg">
+                    <p>S (30-38Kg, <1m55)</p>
+                    <p>M (39-50Kg, <1m65)</p>
+                    <p>L (51-61Kg, <1m72)</p>
+                    <p>XL (61-75Kg, <1m78)</p>
+                  </span>
+                </div>
+                <div class="md:text-lg">
+                  <p class="text-gray-400 pt-3 md:text-lg">Lưu ý:</p>
+                  <span class="text-sm md:text-lg">
+                    <p>- Nếu chưa chắc chắn về chọn size sản phẩm</p>
+                    <p>
+                      Nếu khách form người không cân đối (Béo, gầy, thấp...)
+                    </p>
+                    <p>Nếu khách thích mặc ôm body hoặc mặc rộng thoải mái</p>
+                    <p>XL (61-75Kg, <1m78)</p>
+                  </span>
+                </div>
+                <div>
+                  <p class="text-gray-400 pt-3 md:text-lg">Chế độ bảo hành :</p>
+                  <span class="text-sm md:text-lg">
+                    <p>- Tất cả các sản phẩm đều được shop bảo hành</p>
+                    <p>
+                      - Đối với sản phẩm lỗi/đơn hàng thiếu sản phẩm, quý khách
+                      vui lòng nhắn tin/gọi ngay cho shop trong vòng 3 ngày (kể
+                      từ ngày nhận đơn hàng)
+                    </p>
+                  </span>
+                </div>
+                <div>
+                  <p class="text-gray-400 pt-3 md:text-lg">Cam kết:</p>
+                  <span class="text-sm md:text-lg">
+                    <p>
+                      - Mang đến cho khách hàng những sản phẩm với chất lượng
+                      tốt nhất trong tầm giá
+                    </p>
+                    <p>
+                      - Chính sách bảo hành tốt nhất (Hỗ trợ đổi size, Hỗ trợ
+                      đổi Sản phẩm lỗi)
+                    </p>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="hidden md:block md:w-[20%] mt-3 px-5 border-x">
+              <h3 class="text-center text-gray-500">Top sản phẩm bán chạy</h3>
+              <div class="pt-5">
+                <div>
+                  <div class="w-full h-[250px]">
+                    <img
+                      class="w-full h-full object-cover"
+                      src="../img/men3.png"
+                      alt=""
+                    />
+                  </div>
+                  <h3 class="pt-2 text-center text-lg">Bộ nam xuất khẩu</h3>
+                  <p class="text-center text-sm text-red-500">$20 - $30</p>
+                </div>
+                <div>
+                  <div class="w-full h-[250px]">
+                    <img
+                      class="w-full h-full object-cover"
+                      src="../img/men2.png"
+                      alt=""
+                    />
+                  </div>
+                  <h3 class="pt-2 text-center text-lg">Bộ nam xuất khẩu</h3>
+                  <p class="text-center text-sm text-red-500">$20 - $30</p>
+                </div>
+                <div>
+                  <div class="w-full h-[250px]">
+                    <img
+                      class="w-full h-full object-cover"
+                      src="../img/men1.png"
+                      alt=""
+                    />
+                  </div>
+                  <h3 class="pt-2 text-center text-lg">Bộ nam xuất khẩu</h3>
+                  <p class="text-center text-sm text-red-500">$20 - $30</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="py-3 font-medium md:text-2xl">Đánh giá sản phẩm</h3>
+            <div>
+              <div>
+                <div class="flex items-center">
+                  <i class="fa-solid fa-user"></i>
+                  <p class="pl-2">Khách hàng 1</p>
+                </div>
+                <div class="pl-6">
+                  <p class="text-xs text-gray-500">
+                    02-04-2022 <span>16:00</span>
+                  </p>
+                  <p class="">
+                    Sản phẩm như trong hình. Giao hàng đúng hẹn !!!
+                  </p>
+                  <div class="w-[100px] h-[100px]">
+                    <img
+                      class="w-full h-full object-cover"
+                      src="../img/detail6.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="pt-3 md:my-3 md:border-t">
+                <div class="flex items-center">
+                  <i class="fa-solid fa-user"></i>
+                  <p class="pl-2">Khách hàng 2</p>
+                </div>
+                <div class="pl-6">
+                  <p class="text-xs text-gray-500">
+                    02-04-2022 <span>16:00</span>
+                  </p>
+                  <p class="">
+                    Sản phẩm như trong hình. Giao hàng đúng hẹn !!!
+                  </p>
+                  <div class="w-[100px] h-[100px]">
+                    <img
+                      class="w-full h-full object-cover"
+                      src="../img/detail3.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="pt-3 md:my-3 md:border-t">
+                <div class="flex items-center">
+                  <i class="fa-solid fa-user"></i>
+                  <p class="pl-2">Khách hàng 2</p>
+                </div>
+                <div class="pl-6">
+                  <p class="text-xs text-gray-500">
+                    02-04-2022 <span>16:00</span>
+                  </p>
+                  <p class="">
+                    Sản phẩm như trong hình. Giao hàng đúng hẹn !!!
+                  </p>
+                  <div class="w-[100px] h-[100px]">
+                    <img
+                      class="w-full h-full object-cover"
+                      src="../img/detail7.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <section>
+      <div class="">
+        <div
+          class="grid grid-cols-1 gap-4 md:grid-cols-2 p-2 md:bg-[#aaa] md:py-5 md:border-b"
+        >
+          <div class="text-center">
+            <p class="text-lg font-medium pb-2 md:text-[28px]">
+              Đăng ký để nhận được nhiều ưu đãi từ
+              <span class="text-amber-600">Shop</span>
+            </p>
+            <div
+              class="w-[90%] h-[40px] border-2 m-auto flex justify-between rounded-full md:w-[50%] md:mt-5"
+            >
+              <input
+                class="focus:outline-none pl-2 w-[70%] rounded-full focus:ring-1"
+                type="text"
+                placeholder="Đăng ký tại đây"
+                name=""
+                id=""
+              />
+              <button class="bg-black w-[30%] text-white rounded-full">
+                Đăng Ký
+              </button>
+            </div>
+          </div>
+          <div class="text-center pt-5 md:pt-0">
+            <p class="text-lg font-medium pb-1 md:text-[28px]">
+              Những đối tác lớn của chúng tôi
+            </p>
+            <div class="w-[100%] md:w-[50%] md:mt-5 m-auto">
+              <div class="swiper mySwiper mySwiper1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide flex justify-center items-center">
+                    <img
+                      class="w-[40%] h-[40%] md:w-full md:h-full object-cover"
+                      src="../img/logo1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide flex justify-center items-center">
+                    <img
+                      class="w-[40%] h-[40%] md:w-full md:h-full object-cover"
+                      src="../img/logo2.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide flex justify-center items-center">
+                    <img
+                      class="w-[40%] h-[40%] md:w-full md:h-full object-cover"
+                      src="../img/logo3.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide flex justify-center items-center">
+                    <img
+                      class="w-[40%] h-[40%] md:w-full md:h-full object-cover"
+                      src="../img/logo4.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide flex justify-center items-center">
+                    <img
+                      class="w-[40%] h-[40%] md:w-full md:h-full object-cover"
+                      src="../img/logo5.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide flex justify-center items-center">
+                    <img
+                      class="w-[40%] h-[40%] md:w-full md:h-full object-cover"
+                      src="../img/logo6.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide flex justify-center items-center">
+                    <img
+                      class="w-[40%] h-[40%] md:w-full md:h-full object-cover"
+                      src="../img/logo7.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="mt-5 bg-[#aaa] md:grid grid-cols-4 md:mt-0 md:pt-5">
+          <div class="p-2 border-b md:pl-[30px]">
+            <h3 class="text-orange-500 font-medium text-xl pb-4 md:text-[28px]">
+              ShopDay
+            </h3>
+            <div>
+              <div class="flex items-center pb-2">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="pl-2">378 Minh Khai, Ha Noi</p>
+              </div>
+              <div class="flex items-center pb-2">
+                <i class="fa-solid fa-envelope"></i>
+                <p class="pl-2">378@gmail.com</p>
+              </div>
+              <div class="flex items-center">
+                <i class="fa-solid fa-phone"></i>
+                <p class="pl-2">123456789</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 border-b md:pl-[60px]">
+            <h3 class="text-orange-500 font-medium text-xl pb-4 md:text-[28px]">
+              Hỗ trợ khách hàng
+            </h3>
+            <div>
+              <p class="pb-2">Trung tâm bảo hành</p>
+              <p class="pb-2">Chính sách đổi hàng và bảo hành</p>
+              <p class="pb-2">Chi phí vận chuyển</p>
+              <p class="pb-2">Hướng dẫn mua hàng Online</p>
+              <p class="pb-2">Hướng dẫn bảo quản</p>
+            </div>
+          </div>
+          <div class="p-2 border-b md:pl-[50px]">
+            <h3 class="text-orange-500 font-medium text-xl pb-4 md:text-[28px]">
+              Thanh Toan
+            </h3>
+            <div class="text-[28px]">
+              <i class="fa-brands fa-cc-visa pr-2"></i>
+              <i class="fa-solid fa-address-card pr-2"></i>
+              <i class="fa-brands fa-cc-jcb pr-2"></i>
+              <i class="fa-brands fa-cc-paypal"></i>
+            </div>
+          </div>
+          <div class="p-2 border-b md:pl-[85px]">
+            <h3 class="text-orange-500 font-medium text-xl pb-4 md:text-[28px]">
+              Nen Tang Khac
+            </h3>
+            <div class="text-[28px]">
+              <i class="fa-brands fa-facebook pr-2"></i>
+              <i class="fa-brands fa-twitter-square pr-2"></i>
+              <i class="fa-brands fa-instagram-square pr-2"></i>
+              <i class="fa-brands fa-tiktok pr-2"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- js -->
+    <script src="tail.js "></script>
+    <script src="detailPro.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper1", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          "@0.00": {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          "@0.30": {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          "@0.60": {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          "@1.00": {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+    <!--  -->
+  </body>
+</html>
