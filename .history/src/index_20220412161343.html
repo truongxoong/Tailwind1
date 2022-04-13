@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TailWind1</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <script
+      src="https://kit.fontawesome.com/e5dad05767.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/e5dad05767.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header -->
+    <section>
+      <div
+        class="p-3 flex justify-between bg-yellow-300 md:w-4/6 md:m-auto md:items-center border-b md:bg-white"
+      >
+        <div>
+          <h1 class="text-xl font-medium md:text-4xl md:font-bold">
+            Shop <span class="text-orange-500">Day</span>
+          </h1>
+        </div>
+        <div
+          id="listMenu"
+          class="fixed top-0 right-0 w-1/2 h-screen bg-white text-black hidden md:block md:static md:w-auto md:h-auto md:bg-white z-10"
+        >
+          <ul class="flex flex-col items-center h-full md:flex-row md:text-lg">
+            <li class="p-8 md:p-4 border-b md:border-none">
+              <a href="" class="hover:text-amber-600">Trang Chủ</a>
+            </li>
+            <li class="p-8 md:p-4 border-b md:border-none">
+              <a href="" class="hover:text-amber-600">Sản Phẩm</a>
+            </li>
+            <li class="p-8 md:p-4 border-b md:border-none">
+              <a href="" class="hover:text-amber-600">Tin tức</a>
+            </li>
+            <li class="p-8 md:p-4 border-b md:border-none">
+              <a href="" class="hover:text-amber-600">Liên Hệ</a>
+            </li>
+            <li class="p-8 md:p-4 border-b md:border-none">
+              <a href="" class="hover:text-amber-600">Hướng Dẫn</a>
+            </li>
+            <li class="p-8 md:p-4 border-b md:border-none">
+              <a href="" class="hover:text-amber-600">Tính Năng</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex">
+          <div class="pl-2">
+            <i class="pl-4 fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="pl-2">
+            <i class="pl-4 fa-solid fa-user"></i>
+          </div>
+          <div class="pl-2 relative">
+            <i class="pl-4 fa-solid fa-cart-shopping"></i>
+            <p class="absolute -top-[10px] left-[33px] w-5 h-5 flex justify-center items-center text-xs rounded-full bg-amber-400">0</p>
+          </div>
+          <div id="menuTop" class="pl-4 z-10 md:hidden">
+            <i class="fa-solid fa-bars z-10"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner -->
+    <section>
+      <div class="relative">
+        <div class="swiper mySwiper mySwiper2 w-full h-full">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide cursor-pointer">
+              <div class="w-full h-full">
+                <img
+                  class="w-full h-full object-cover"
+                  src="../img/banner1.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="absolute top-1/2 left-2 transform -translate-y-1/2 p-2 bg-black text-white md:p-4 md:left-80 md:w-96"
+              >
+                <h3 class="text-lg font-medium text-center md:text-3xl font-serif">
+                  SumMer
+                </h3>
+                <p class="text-xs text-center md:py-3 md:text-base">
+                  Những mẫu <span class="text-amber-500">HOT</span> nhất 2022
+                </p>
+                <div class="flex justify-center">
+                  <button
+                    class="p-1 text-black bg-amber-600 mt-2 text-xs font-normal md:text-xl md:p-3 md:font-semibold"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide cursor-pointer">
+              <div class="w-full h-full">
+                <img
+                  class="w-full h-full object-cover"
+                  src="../img/banner1.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="absolute top-1/2 left-2 transform -translate-y-1/2 p-2 bg-black text-white md:p-4 md:left-80 md:w-96"
+              >
+                <h3 class="text-lg font-medium text-center md:text-3xl font-serif">
+                  SumMer
+                </h3>
+                <p class="text-xs text-center md:py-3 md:text-base">
+                  Những mẫu <span class="text-amber-500">HOT</span> nhất 2022
+                </p>
+                <div class="flex justify-center">
+                  <button
+                    class="p-1 text-black bg-amber-600 mt-2 text-xs font-normal md:text-xl md:p-3 md:font-semibold"
+                  >
+                    Shop Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- overview -->
+    <section>
+      <div class="p-2 md:w-2/3 m-auto">
+        <h2
+          class="text-center pt-6 pb-3 font-serif text-[28px] text-orange-500 md:text-[60px] md:pt-[50px] md:pb-[30px]"
+        >
+          Overview
+        </h2>
+        <div class="grid grid-cols-2 gap-2 md:grid-cols-3">
+          <div
+            class="col-span-2 overflow-hidden w-full h-full relative md:h-[300px] group"
+          >
+            <img
+              class="rounded-md object-cover w-full h-full group-hover:scale-110 transform transition-all duration-700"
+              src="../img/overview1.png"
+              alt=""
+            />
+            <div
+              class="absolute bottom-[20px] left-1/2 text-white bg-black px-[60px] py-[10px] rounded-full transform -translate-x-1/2 text-base font-medium md:text-[28px] md:py-3 md: md:bottom-[unset] md:-translate-y-1/2 md:top-1/2 md:invisible md:font-serif group-hover:visible group-hover:top-[60%] duration-700"
+            >
+              Men
+            </div>
+          </div>
+          <div
+            class="overflow-hidden w-full h-full relative md:h-[300px] group"
+          >
+            <img
+              class="rounded-md object-cover w-full h-full group-hover:scale-110 transform transition-all duration-700"
+              src="../img/overview2.png"
+              alt=""
+            />
+            <div
+              class="absolute bottom-[20px] left-1/2 text-white bg-black px-[60px] py-[10px] rounded-full transform -translate-x-1/2 text-base font-medium md:text-[28px] md:py-3 md: md:bottom-[unset] md:-translate-y-1/2 md:top-1/2 md:invisible md:font-serif group-hover:visible group-hover:top-[60%] duration-700"
+            >
+              Hat
+            </div>
+          </div>
+          <div
+            class="overflow-hidden w-full h-full relative md:h-[300px] group"
+          >
+            <img
+              class="rounded-md object-cover w-full h-full group-hover:scale-110 transform transition-all duration-700"
+              src="../img/overview3.png"
+              alt=""
+            />
+            <div
+              class="absolute bottom-[20px] left-1/2 text-white bg-black px-[60px] py-[10px] rounded-full transform -translate-x-1/2 text-base font-medium md:text-[28px] md:py-3 md: md:bottom-[unset] md:-translate-y-1/2 md:top-1/2 md:invisible md:font-serif group-hover:visible group-hover:top-[60%] duration-700"
+            >
+              Women
+            </div>
+          </div>
+          <div
+            class="overflow-hidden col-span-2 w-full h-full relative md:h-[300px] group"
+          >
+            <img
+              class="rounded-md object-cover w-full h-full group-hover:scale-110 transform transition-all duration-700"
+              src="../img/overview5.png"
+              alt=""
+            />
+            <div
+              class="absolute bottom-[20px] left-1/2 text-white bg-black px-[60px] py-[10px] rounded-full transform -translate-x-1/2 text-base font-medium md:text-[28px] md:py-3 md: md:bottom-[unset] md:-translate-y-1/2 md:top-1/2 md:invisible md:font-serif group-hover:visible group-hover:top-[60%] duration-700"
+            >
+              Shoes
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Trending -->
+    <section>
+      <div id="trending" class="p-2 md:w-2/3 m-auto">
+        <h2
+          class="text-center pt-6 font-serif text-[28px] text-orange-500 md:text-[60px] md:pt-[50px]"
+        >
+          Trending
+        </h2>
+        <p class="text-center pb-4 text-xs md:pb-[40px] md:text-lg">
+          ---Những mẫu hot nhất hiện nay---
+        </p>
+        <div class="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-[30px]">
+          <div class="">
+            <div
+              class="w-full h-[300px] md:h-[400px] relative  overflow-hidden group cursor-pointer"
+            >
+              <a href="detailProduct.html">
+                <img
+                  class="h-full object-cover w-full group-hover:scale-110 duration-500"
+                  src="../img/tren1.png"
+                  alt=""
+                  
+                />
+              </a>              
+              <div
+                class="absolute top-[1%] right-[2%] bg-black w-[30px] h-[70px] text-white rounded-full opacity-90 flex justify-around items-center text-[15px] md:w-[50px] md:h-[100px] flex-col md:rounded-full md:top-1 md:-left-16 md:opacity-70 md:group-hover:left-2 duration-500"
+              >
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-cart-arrow-down"></i>
+              </div>
+              <div id="trenQuick"
+                class=" absolute bottom-2 md:-bottom-[50px] left-1/2 transform -translate-x-1/2 w-[150px] h-[40px] md:w-[200px] md:h-[50px] bg-gray-500 rounded-full md:pl-[30px] md:leading-[50px] md:group-hover:md:visible md:group-hover:md:bottom-[30px] md:duration-500 md:hover:bg-gray-700 flex justify-center items-center"
+              >
+                <button class="font-semibold text-[25px] text-white hidden md:block pointer-events-none">
+                  Xem Nhanh
+                </button>
+                <i class="fa-solid fa-eye md:invisible text-[23px] text-white pointer-events-none"></i>
+              </div>              
+            </div>
+            <div>
+              <h3 id="nameProduct" class="pt-2 pb-0">Váy đùi</h3>
+              <p  class="text-gray-400">$ <span id="priceProduct">20</span></p>
+            </div>
+          </div>          
+          <div class="">
+            <div
+              class="w-full h-[300px] md:h-[400px] relative  overflow-hidden group cursor-pointer"
+            >
+              <img
+                class="h-full object-cover w-full group-hover:scale-110 duration-500"
+                src="../img/tren2.png"
+                alt=""
+              />
+              <div
+                class="absolute top-[1%] right-[2%] bg-black w-[30px] h-[70px] text-white rounded-full opacity-90 flex justify-around items-center text-[15px] md:w-[50px] md:h-[100px] flex-col md:rounded-full md:top-1 md:-left-16 md:opacity-70 md:group-hover:left-2 duration-500"
+              >
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-cart-arrow-down"></i>
+              </div>
+              <div id="trenQuick"
+                class=" absolute bottom-2 md:-bottom-[50px] left-1/2 transform -translate-x-1/2 w-[150px] h-[40px] md:w-[200px] md:h-[50px] bg-gray-500 rounded-full md:pl-[30px] md:leading-[50px] md:group-hover:md:visible md:group-hover:md:bottom-[30px] md:duration-500 md:hover:bg-gray-700 flex justify-center items-center"
+              >
+                <button class="font-semibold text-[25px] text-white hidden md:block pointer-events-none">
+                  Xem Nhanh
+                </button>
+                <i class="fa-solid fa-eye md:invisible text-[23px] text-white pointer-events-none"></i>
+              </div>              
+            </div>
+            <div>
+              <h3 id="nameProduct" class="pt-2 pb-0">Váy giả quần</h3>
+              <p  class="text-gray-400">$ <span id="priceProduct">35</span></p>
+            </div>
+          </div>          
+          <div class="">
+            <div
+              class="w-full h-[300px] md:h-[400px] relative  overflow-hidden group cursor-pointer"
+            >
+              <img
+                class="h-full object-cover w-full group-hover:scale-110 duration-500"
+                src="../img/tren3.png"
+                alt=""
+              />
+              <div
+                class="absolute top-[1%] right-[2%] bg-black w-[30px] h-[70px] text-white rounded-full opacity-90 flex justify-around items-center text-[15px] md:w-[50px] md:h-[100px] flex-col md:rounded-full md:top-1 md:-left-16 md:opacity-70 md:group-hover:left-2 duration-500"
+              >
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-cart-arrow-down"></i>
+              </div>
+              <div id="trenQuick"
+                class=" absolute bottom-2 md:-bottom-[50px] left-1/2 transform -translate-x-1/2 w-[150px] h-[40px] md:w-[200px] md:h-[50px] bg-gray-500 rounded-full md:pl-[30px] md:leading-[50px] md:group-hover:md:visible md:group-hover:md:bottom-[30px] md:duration-500 md:hover:bg-gray-700 flex justify-center items-center"
+              >
+                <button class="font-semibold text-[25px] text-white hidden md:block pointer-events-none">
+                  Xem Nhanh
+                </button>
+                <i class="fa-solid fa-eye md:invisible text-[23px] text-white pointer-events-none"></i>
+              </div>              
+            </div>
+            <div>
+              <h3 id="nameProduct" class="pt-2 pb-0">Áo tắm biển</h3>
+              <p  class="text-gray-400">$ <span id="priceProduct">8</span></p>
+            </div>
+          </div>          
+          <div class="">
+            <div
+              class="w-full h-[300px] md:h-[400px] relative  overflow-hidden group cursor-pointer"
+            >
+              <img
+                class="h-full object-cover w-full group-hover:scale-110 duration-500"
+                src="../img/tren4.png"
+                alt=""
+              />
+              <div
+                class="absolute top-[1%] right-[2%] bg-black w-[30px] h-[70px] text-white rounded-full opacity-90 flex justify-around items-center text-[15px] md:w-[50px] md:h-[100px] flex-col md:rounded-full md:top-1 md:-left-16 md:opacity-70 md:group-hover:left-2 duration-500"
+              >
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-cart-arrow-down"></i>
+              </div>
+              <div id="trenQuick"
+                class=" absolute bottom-2 md:-bottom-[50px] left-1/2 transform -translate-x-1/2 w-[150px] h-[40px] md:w-[200px] md:h-[50px] bg-gray-500 rounded-full md:pl-[30px] md:leading-[50px] md:group-hover:md:visible md:group-hover:md:bottom-[30px] md:duration-500 md:hover:bg-gray-700 flex justify-center items-center"
+              >
+                <button class="font-semibold text-[25px] text-white hidden md:block pointer-events-none">
+                  Xem Nhanh
+                </button>
+                <i class="fa-solid fa-eye md:invisible text-[23px] text-white pointer-events-none"></i>
+              </div>              
+            </div>
+            <div>
+              <h3 id="nameProduct" class="pt-2 pb-0">Quần bò</h3>
+              <p  class="text-gray-400">$ <span id="priceProduct">60</span></p>
+            </div>
+          </div>          
+          <div class="">
+            <div
+              class="w-full h-[300px] md:h-[400px] relative  overflow-hidden group cursor-pointer"
+            >
+              <img
+                class="h-full object-cover w-full group-hover:scale-110 duration-500"
+                src="../img/tren5.png"
+                alt=""
+              />
+              <div
+                class="absolute top-[1%] right-[2%] bg-black w-[30px] h-[70px] text-white rounded-full opacity-90 flex justify-around items-center text-[15px] md:w-[50px] md:h-[100px] flex-col md:rounded-full md:top-1 md:-left-16 md:opacity-70 md:group-hover:left-2 duration-500"
+              >
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-cart-arrow-down"></i>
+              </div>
+              <div id="trenQuick"
+                class=" absolute bottom-2 md:-bottom-[50px] left-1/2 transform -translate-x-1/2 w-[150px] h-[40px] md:w-[200px] md:h-[50px] bg-gray-500 rounded-full md:pl-[30px] md:leading-[50px] md:group-hover:md:visible md:group-hover:md:bottom-[30px] md:duration-500 md:hover:bg-gray-700 flex justify-center items-center"
+              >
+                <button class="font-semibold text-[25px] text-white hidden md:block pointer-events-none">
+                  Xem Nhanh
+                </button>
+                <i class="fa-solid fa-eye md:invisible text-[23px] text-white pointer-events-none"></i>
+              </div>              
+            </div>
+            <div>
+              <h3 id="nameProduct" class="pt-2 pb-0">Váy trắng</h3>
+              <p  class="text-gray-400">$ <span id="priceProduct">32</span></p>
+            </div>
+          </div>          
+          <div class="">
+            <div
+              class="w-full h-[300px] md:h-[400px] relative  overflow-hidden group cursor-pointer"
+            >
+              <img
+                class="h-full object-cover w-full group-hover:scale-110 duration-500"
+                src="../img/tren6.png"
+                alt=""
+              />
+              <div
+                class="absolute top-[1%] right-[2%] bg-black w-[30px] h-[70px] text-white rounded-full opacity-90 flex justify-around items-center text-[15px] md:w-[50px] md:h-[100px] flex-col md:rounded-full md:top-1 md:-left-16 md:opacity-70 md:group-hover:left-2 duration-500"
+              >
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-cart-arrow-down"></i>
+              </div>
+              <div id="trenQuick"
+                class=" absolute bottom-2 md:-bottom-[50px] left-1/2 transform -translate-x-1/2 w-[150px] h-[40px] md:w-[200px] md:h-[50px] bg-gray-500 rounded-full md:pl-[30px] md:leading-[50px] md:group-hover:md:visible md:group-hover:md:bottom-[30px] md:duration-500 md:hover:bg-gray-700 flex justify-center items-center"
+              >
+                <button class="font-semibold text-[25px] text-white hidden md:block pointer-events-none">
+                  Xem Nhanh
+                </button>
+                <i class="fa-solid fa-eye md:invisible text-[23px] text-white pointer-events-none"></i>
+              </div>              
+            </div>
+            <div>
+              <h3 id="nameProduct" class="pt-2 pb-0">bộ hoa</h3>
+              <p  class="text-gray-400">$ <span id="priceProduct">35</span></p>
+            </div>
+          </div>          
+          <div class="">
+            <div
+              class="w-full h-[300px] md:h-[400px] relative  overflow-hidden group cursor-pointer"
+            >
+              <img
+                class="h-full object-cover w-full group-hover:scale-110 duration-500"
+                src="../img/tren7.png"
+                alt=""
+              />
+              <div
+                class="absolute top-[1%] right-[2%] bg-black w-[30px] h-[70px] text-white rounded-full opacity-90 flex justify-around items-center text-[15px] md:w-[50px] md:h-[100px] flex-col md:rounded-full md:top-1 md:-left-16 md:opacity-70 md:group-hover:left-2 duration-500"
+              >
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-cart-arrow-down"></i>
+              </div>
+              <div id="trenQuick"
+                class=" absolute bottom-2 md:-bottom-[50px] left-1/2 transform -translate-x-1/2 w-[150px] h-[40px] md:w-[200px] md:h-[50px] bg-gray-500 rounded-full md:pl-[30px] md:leading-[50px] md:group-hover:md:visible md:group-hover:md:bottom-[30px] md:duration-500 md:hover:bg-gray-700 flex justify-center items-center"
+              >
+                <button class="font-semibold text-[25px] text-white hidden md:block pointer-events-none">
+                  Xem Nhanh
+                </button>
+                <i class="fa-solid fa-eye md:invisible text-[23px] text-white pointer-events-none"></i>
+              </div>              
+            </div>
+            <div>
+              <h3 id="nameProduct" class="pt-2 pb-0">Giày</h3>
+              <p  class="text-gray-400">$ <span id="priceProduct">10</span></p>
+            </div>
+          </div>          
+          <div class="">
+            <div
+              class="w-full h-[300px] md:h-[400px] relative  overflow-hidden group cursor-pointer"
+            >
+              <img
+                class="h-full object-cover w-full group-hover:scale-110 duration-500"
+                src="../img/tren8.png"
+                alt=""
+              />
+              <div
+                class="absolute top-[1%] right-[2%] bg-black w-[30px] h-[70px] text-white rounded-full opacity-90 flex justify-around items-center text-[15px] md:w-[50px] md:h-[100px] flex-col md:rounded-full md:top-1 md:-left-16 md:opacity-70 md:group-hover:left-2 duration-500"
+              >
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-cart-arrow-down"></i>
+              </div>
+              <div id="trenQuick"
+                class=" absolute bottom-2 md:-bottom-[50px] left-1/2 transform -translate-x-1/2 w-[150px] h-[40px] md:w-[200px] md:h-[50px] bg-gray-500 rounded-full md:pl-[30px] md:leading-[50px] md:group-hover:md:visible md:group-hover:md:bottom-[30px] md:duration-500 md:hover:bg-gray-700 flex justify-center items-center"
+              >
+                <button class="font-semibold text-[25px] text-white hidden md:block pointer-events-none">
+                  Xem Nhanh
+                </button>
+                <i class="fa-solid fa-eye md:invisible text-[23px] text-white pointer-events-none"></i>
+              </div>              
+            </div>
+            <div>
+              <h3 id="nameProduct" class="pt-2 pb-0">Quần đùi</h3>
+              <p  class="text-gray-400">$ <span id="priceProduct">25</span></p>
+            </div>
+          </div>  
+          <!--  -->
+        </div>
+      </div>
+    </section>
+    <!-- sale summer -->
+    <section>
+      <div class="hidden md:grid grid-cols-2 gap-5 pt-[50px]">
+        <div
+          class="w-full h-[400px] relative overflow-hidden group cursor-pointer"
+        >
+          <img
+            class="w-full h-full object-cover group-hover:scale-110 duration-500"
+            src="../img/sale1.png"
+            alt=""
+          />
+          <div
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+          >
+            <h3 class="text-center text-[30px] font-serif z-30">Đồ Mùa Hè</h3>
+            <p class="text-center text-[60px]">Sale khủng 50%</p>
+            <div class="flex justify-center items-center mt-4"">
+              <button
+                class="text-2xl font-bold bg-amber-500 rounded-lg py-3 px-7 text-white"
+              >
+                Shop Now
+              </button>
+            </div>
+          </div>
+          <div
+            class="absolute top-0 left-0 bg-black right-0 bottom-0 opacity-20"
+          ></div>
+        </div>
+        <div
+          class="w-full h-[400px] relative overflow-hidden group cursor-pointer"
+        >
+          <img
+            class="w-full h-full object-cover group-hover:scale-110 duration-500"
+            src="../img/sale2.png"
+            alt=""
+          />
+          <div
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+          >
+            <h3 class="text-center text-[60px] font-serif text-gray-100">Hàng Mới Về</h3>
+            <p class="text-center text-[20px]">Những mẫu mới nhất 2022</p>
+            <div class="flex justify-center items-center mt-4">
+              <button
+                class="text-2xl font-bold bg-amber-500 rounded-lg py-3 px-7 text-white"
+              >
+                Shop Now
+              </button>
+            </div>
+          </div>
+          <div
+            class="absolute top-0 left-0 bg-black right-0 bottom-0 opacity-10"
+          ></div>
+        </div>
+      </div>
+    </section>
+    <!-- men -->
+    <section>
+      <div class="md:w-4/6 m-auto p-2">
+        <h2
+          class="text-center pt-6 font-serif text-[28px] text-orange-500 md:text-[60px] md:pt-[50px]"
+        >
+          Men
+        </h2>
+        <p class="text-center pb-4 text-xs md:pb-[40px] md:text-lg">
+          ---Những mẫu hot nhất hiện nay---
+        </p>
+        <div class="swiper mySwiper h-[350px] md:h-[470px]">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide h-full">
+              <div class="group overflow-hidden">
+                <img
+                  class="w-full h-[85%] object-cover"
+                  src="../img/men1.png"
+                  alt=""
+                />
+                <div
+                  class="absolute top-1 left-1 w-[30px] h-[70px] text-[14px]  bg-black md:w-[40px] md:h-[100px] text-white rounded-full opacity-90 flex justify-around items-center md:text-[18px] flex-col md:-top-28 md:right-[8px] md:opacity-70 transform duration-500 md:group-hover:top-2"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-cart-arrow-down"></i>
+                </div>
+                <div id="trenQuick"
+                  class="absolute w-[70%] h-[30px] md:invisible bottom-[20%] md:top-[79%] md:w-[80%] md:h-[40px] bg-amber-600 rounded-full flex justify-center transform left-1/2 -translate-x-1/2 md:group-hover:visible duration-500 md:group-hover:top-[70%] hover:bg-black hover:text-amber-600 z-10"
+                >
+                  <button class="text-[20px] md:text-2xl w-full pointer-events-none">
+                    <i class="fa-solid fa-eye pointer-events-none"></i>
+                  </button>
+                </div>
+                <div
+                  class="absolute top-0 left-0 w-full h-[88%] bg-black opacity-40 -z-0 scale-0 md:group-hover:scale-100"
+                ></div>
+              </div>
+              <div>
+                <h3 class="pt-2">Quân bò</h3>
+                <p class="text-gray-400">$ <span>20</span></p>
+              </div>
+            </div>
+            <div class="swiper-slide h-full">
+              <div class="group overflow-hidden">
+                <img
+                  class="w-full h-[85%] object-cover"
+                  src="../img/men2.png"
+                  alt=""
+                />
+                <div
+                  class="absolute top-1 left-1 w-[30px] h-[70px] text-[14px]  bg-black md:w-[40px] md:h-[100px] text-white rounded-full opacity-90 flex justify-around items-center md:text-[18px] flex-col md:-top-28 md:right-[8px] md:opacity-70 transform duration-500 md:group-hover:top-2"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-cart-arrow-down"></i>
+                </div>
+                <div id="trenQuick"
+                  class="absolute w-[70%] h-[30px] md:invisible bottom-[20%] md:top-[79%] md:w-[80%] md:h-[40px] bg-amber-600 rounded-full flex justify-center transform left-1/2 -translate-x-1/2 md:group-hover:visible duration-500 md:group-hover:top-[70%] hover:bg-black hover:text-amber-600 z-10"
+                >
+                  <button class="text-[20px] md:text-2xl w-full pointer-events-none">
+                    <i class="fa-solid fa-eye pointer-events-none"></i>
+                  </button>
+                </div>
+                <div
+                  class="absolute top-0 left-0 w-full h-[88%] bg-black opacity-40 -z-0 scale-0 md:group-hover:scale-100"
+                ></div>
+              </div>
+              <div>
+                <h3 class="pt-2">Quân thun</h3>
+                <p class="text-gray-400">$ <span>55</span></p>
+              </div>
+            </div>
+            <div class="swiper-slide h-full">
+              <div class="group overflow-hidden">
+                <img
+                  class="w-full h-[85%] object-cover"
+                  src="../img/men3.png"
+                  alt=""
+                />
+                <div
+                  class="absolute top-1 left-1 w-[30px] h-[70px] text-[14px]  bg-black md:w-[40px] md:h-[100px] text-white rounded-full opacity-90 flex justify-around items-center md:text-[18px] flex-col md:-top-28 md:right-[8px] md:opacity-70 transform duration-500 md:group-hover:top-2"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-cart-arrow-down"></i>
+                </div>
+                <div id="trenQuick"
+                  class="absolute w-[70%] h-[30px] md:invisible bottom-[20%] md:top-[79%] md:w-[80%] md:h-[40px] bg-amber-600 rounded-full flex justify-center transform left-1/2 -translate-x-1/2 md:group-hover:visible duration-500 md:group-hover:top-[70%] hover:bg-black hover:text-amber-600 z-10"
+                >
+                  <button class="text-[20px] md:text-2xl w-full pointer-events-none">
+                    <i class="fa-solid fa-eye pointer-events-none"></i>
+                  </button>
+                </div>
+                <div
+                  class="absolute top-0 left-0 w-full h-[88%] bg-black opacity-40 -z-0 scale-0 md:group-hover:scale-100"
+                ></div>
+              </div>
+              <div>
+                <h3 class="pt-2">Áo bò</h3>
+                <p class="text-gray-400">$ <span>100</span></p>
+              </div>
+            </div>
+            <div class="swiper-slide h-full">
+              <div class="group overflow-hidden">
+                <img
+                  class="w-full h-[85%] object-cover"
+                  src="../img/men4.png"
+                  alt=""
+                />
+                <div
+                  class="absolute top-1 left-1 w-[30px] h-[70px] text-[14px]  bg-black md:w-[40px] md:h-[100px] text-white rounded-full opacity-90 flex justify-around items-center md:text-[18px] flex-col md:-top-28 md:right-[8px] md:opacity-70 transform duration-500 md:group-hover:top-2"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-cart-arrow-down"></i>
+                </div>
+                <div id="trenQuick"
+                  class="absolute w-[70%] h-[30px] md:invisible bottom-[20%] md:top-[79%] md:w-[80%] md:h-[40px] bg-amber-600 rounded-full flex justify-center transform left-1/2 -translate-x-1/2 md:group-hover:visible duration-500 md:group-hover:top-[70%] hover:bg-black hover:text-amber-600 z-10"
+                >
+                  <button class="text-[20px] md:text-2xl w-full pointer-events-none">
+                    <i class="fa-solid fa-eye pointer-events-none"></i>
+                  </button>
+                </div>
+                <div
+                  class="absolute top-0 left-0 w-full h-[88%] bg-black opacity-40 -z-0 scale-0 md:group-hover:scale-100"
+                ></div>
+              </div>
+              <div>
+                <h3 class="pt-2">Áo nắng</h3>
+                <p class="text-gray-400">$ <span>85</span></p>
+              </div>
+            </div>
+            <div class="swiper-slide h-full">
+              <div class="group overflow-hidden">
+                <img
+                  class="w-full h-[85%] object-cover"
+                  src="../img/men5.png"
+                  alt=""
+                />
+                <div
+                  class="absolute top-1 left-1 w-[30px] h-[70px] text-[14px]  bg-black md:w-[40px] md:h-[100px] text-white rounded-full opacity-90 flex justify-around items-center md:text-[18px] flex-col md:-top-28 md:right-[8px] md:opacity-70 transform duration-500 md:group-hover:top-2"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-cart-arrow-down"></i>
+                </div>
+                <div id="trenQuick"
+                  class="absolute w-[70%] h-[30px] md:invisible bottom-[20%] md:top-[79%] md:w-[80%] md:h-[40px] bg-amber-600 rounded-full flex justify-center transform left-1/2 -translate-x-1/2 md:group-hover:visible duration-500 md:group-hover:top-[70%] hover:bg-black hover:text-amber-600 z-10"
+                >
+                  <button class="text-[20px] md:text-2xl w-full pointer-events-none">
+                    <i class="fa-solid fa-eye pointer-events-none"></i>
+                  </button>
+                </div>
+                <div
+                  class="absolute top-0 left-0 w-full h-[88%] bg-black opacity-40 -z-0 scale-0 md:group-hover:scale-100"
+                ></div>
+              </div>
+              <div>
+                <h3 class="pt-2">Quân Ngố</h3>
+                <p class="text-gray-400">$ <span>35</span></p>
+              </div>
+            </div>
+            <div class="swiper-slide h-full">
+              <div class="group overflow-hidden">
+                <img
+                  class="w-full h-[85%] object-cover"
+                  src="../img/men6.png"
+                  alt=""
+                />
+                <div
+                  class="absolute top-1 left-1 w-[30px] h-[70px] text-[14px]  bg-black md:w-[40px] md:h-[100px] text-white rounded-full opacity-90 flex justify-around items-center md:text-[18px] flex-col md:-top-28 md:right-[8px] md:opacity-70 transform duration-500 md:group-hover:top-2"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-cart-arrow-down"></i>
+                </div>
+                <div id="trenQuick"
+                  class="absolute w-[70%] h-[30px] md:invisible bottom-[20%] md:top-[79%] md:w-[80%] md:h-[40px] bg-amber-600 rounded-full flex justify-center transform left-1/2 -translate-x-1/2 md:group-hover:visible duration-500 md:group-hover:top-[70%] hover:bg-black hover:text-amber-600 z-10"
+                >
+                  <button class="text-[20px] md:text-2xl w-full pointer-events-none">
+                    <i class="fa-solid fa-eye pointer-events-none"></i>
+                  </button>
+                </div>
+                <div
+                  class="absolute top-0 left-0 w-full h-[88%] bg-black opacity-40 -z-0 scale-0 md:group-hover:scale-100"
+                ></div>
+              </div>
+              <div>
+                <h3 class="pt-2">Quân hop</h3>
+                <p class="text-gray-400">$ <span>60</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next after:hidden relative">
+            <div
+              class="w-[28px] h-[28px] rounded-full border-2 border-black flex justify-center items-center bg-gray-100 md:bg-transparent opacity-60 absolute -top-[35px]"
+            >
+              <i class="fa-solid fa-angle-right text-black"></i>
+            </div>
+          </div>
+          <div class="swiper-button-prev after:hidden relative">
+            <div
+              class="w-[28px] h-[28px] rounded-full border-2 border-black flex justify-center items-center bg-gray-100 md:bg-transparent opacity-60 absolute -top-[35px]"
+            >
+              <i class="fa-solid fa-angle-left text-black"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Women -->
+    <section>
+      <div class="md:w-4/6 m-auto p-2">
+        <h2
+          class="text-center pt-6 font-serif text-[28px] text-orange-500 md:text-[60px] md:pt-[50px]"
+        >
+          Women
+        </h2>
+        <p class="text-center pb-4 text-xs md:pb-[40px] md:text-lg">
+          ---Những mẫu hot nhất hiện nay---
+        </p>
+        <div class="swiper mySwiper h-[350px] md:h-[470px]">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide h-full">
+              <div class="group overflow-hidden">
+                <img
+                  class="w-full h-[85%] object-cover"
+                  src="../img/women1.png"
+                  alt=""
+                />
+                <div
+                  class="absolute top-1 right-1 w-[30px] h-[70px] text-[14px]  bg-black md:w-[40px] md:h-[100px] text-white rounded-full opacity-90 flex justify-around items-center md:text-[18px] flex-col md:-top-28 md:right-[8px] md:opacity-70 transform duration-500 md:group-hover:top-2"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-cart-arrow-down"></i>
+                </div>
+                <div id="trenQuick"
+                  class="absolute w-[70%] h-[30px] md:invisible bottom-[20%] md:top-[79%] md:w-[80%] md:h-[40px] bg-amber-600 rounded-full flex justify-center transform left-1/2 -translate-x-1/2 md:group-hover:visible duration-500 md:group-hover:top-[70%] hover:bg-black hover:text-amber-600 z-10"
+                >
+                  <button class="text-[20px] md:text-2xl w-full pointer-events-none">
+                    <i class="fa-solid fa-eye pointer-events-none"></i>
+                  </button>
+                </div>
+                <div
+                  class="absolute top-0 left-0 w-full h-[88%] bg-black opacity-40 -z-0 scale-0 md:group-hover:scale-100"
+                ></div>
+              </div>
+              <div>
+                <h3 class="pt-2">Bộ ghi</h3>
+                <p class="text-gray-400">$ <span>120</span></p>
+              </div>
+            </div>
+            <div class="swiper-slide h-full">
+              <div class="group overflow-hidden">
+                <img
+                  class="w-full h-[85%] object-cover"
+                  src="../img/women2.png"
+                  alt=""
+                />
+                <div
+                  class="absolute top-1 right-1 w-[30px] h-[70px] text-[14px]  bg-black md:w-[40px] md:h-[100px] text-white rounded-full opacity-90 flex justify-around items-center md:text-[18px] flex-col md:-top-28 md:right-[8px] md:opacity-70 transform duration-500 md:group-hover:top-2"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-cart-arrow-down"></i>
+                </div>
+                <div id="trenQuick"
+                  class="absolute w-[70%] h-[30px] md:invisible bottom-[20%] md:top-[79%] md:w-[80%] md:h-[40px] bg-amber-600 rounded-full flex justify-center transform left-1/2 -translate-x-1/2 md:group-hover:visible duration-500 md:group-hover:top-[70%] hover:bg-black hover:text-amber-600 z-10"
+                >
+                  <button class="text-[20px] md:text-2xl w-full pointer-events-none">
+                    <i class="fa-solid fa-eye pointer-events-none"></i>
+                  </button>
+                </div>
+                <div
+                  class="absolute top-0 left-0 w-full h-[88%] bg-black opacity-40 -z-0 scale-0 md:group-hover:scale-100"
+                ></div>
+              </div>
+              <div>
+                <h3 class="pt-2">Bộ</h3>
+                <p class="text-gray-400">$ <span>150</span></p>
+              </div>
+            </div>
+            <div class="swiper-slide h-full">
+              <div class="group overflow-hidden">
+                <img
+                  class="w-full h-[85%] object-cover"
+                  src="../img/women3.png"
+                  alt=""
+                />
+                <div
+                  class="absolute top-1 right-1 w-[30px] h-[70px] text-[14px]  bg-black md:w-[40px] md:h-[100px] text-white rounded-full opacity-90 flex justify-around items-center md:text-[18px] flex-col md:-top-28 md:right-[8px] md:opacity-70 transform duration-500 md:group-hover:top-2"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-cart-arrow-down"></i>
+                </div>
+                <div id="trenQuick"
+                  class="absolute w-[70%] h-[30px] md:invisible bottom-[20%] md:top-[79%] md:w-[80%] md:h-[40px] bg-amber-600 rounded-full flex justify-center transform left-1/2 -translate-x-1/2 md:group-hover:visible duration-500 md:group-hover:top-[70%] hover:bg-black hover:text-amber-600 z-10"
+                >
+                  <button class="text-[20px] md:text-2xl w-full pointer-events-none">
+                    <i class="fa-solid fa-eye pointer-events-none"></i>
+                  </button>
+                </div>
+                <div
+                  class="absolute top-0 left-0 w-full h-[88%] bg-black opacity-40 -z-0 scale-0 md:group-hover:scale-100"
+                ></div>
+              </div>
+              <div>
+                <h3 class="pt-2">Bộ đùi</h3>
+                <p class="text-gray-400">$ <span>55</span></p>
+              </div>
+            </div>
+            <div class="swiper-slide h-full">
+              <div class="group overflow-hidden">
+                <img
+                  class="w-full h-[85%] object-cover"
+                  src="../img/women4.png"
+                  alt=""
+                />
+                <div
+                  class="absolute top-1 right-1 w-[30px] h-[70px] text-[14px]  bg-black md:w-[40px] md:h-[100px] text-white rounded-full opacity-90 flex justify-around items-center md:text-[18px] flex-col md:-top-28 md:right-[8px] md:opacity-70 transform duration-500 md:group-hover:top-2"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-cart-arrow-down"></i>
+                </div>
+                <div id="trenQuick"
+                  class="absolute w-[70%] h-[30px] md:invisible bottom-[20%] md:top-[79%] md:w-[80%] md:h-[40px] bg-amber-600 rounded-full flex justify-center transform left-1/2 -translate-x-1/2 md:group-hover:visible duration-500 md:group-hover:top-[70%] hover:bg-black hover:text-amber-600 z-10"
+                >
+                  <button class="text-[20px] md:text-2xl w-full pointer-events-none">
+                    <i class="fa-solid fa-eye pointer-events-none"></i>
+                  </button>
+                </div>
+                <div
+                  class="absolute top-0 left-0 w-full h-[88%] bg-black opacity-40 -z-0 scale-0 md:group-hover:scale-100"
+                ></div>
+              </div>
+              <div>
+                <h3 class="pt-2">váy dài</h3>
+                <p class="text-gray-400">$ <span>50</span></p>
+              </div>
+            </div>
+            <div class="swiper-slide h-full">
+              <div class="group overflow-hidden">
+                <img
+                  class="w-full h-[85%] object-cover"
+                  src="../img/women5.png"
+                  alt=""
+                />
+                <div
+                  class="absolute top-1 right-1 w-[30px] h-[70px] text-[14px]  bg-black md:w-[40px] md:h-[100px] text-white rounded-full opacity-90 flex justify-around items-center md:text-[18px] flex-col md:-top-28 md:right-[8px] md:opacity-70 transform duration-500 md:group-hover:top-2"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-cart-arrow-down"></i>
+                </div>
+                <div id="trenQuick"
+                  class="absolute w-[70%] h-[30px] md:invisible bottom-[20%] md:top-[79%] md:w-[80%] md:h-[40px] bg-amber-600 rounded-full flex justify-center transform left-1/2 -translate-x-1/2 md:group-hover:visible duration-500 md:group-hover:top-[70%] hover:bg-black hover:text-amber-600 z-10"
+                >
+                  <button class="text-[20px] md:text-2xl w-full pointer-events-none">
+                    <i class="fa-solid fa-eye pointer-events-none"></i>
+                  </button>
+                </div>
+                <div
+                  class="absolute top-0 left-0 w-full h-[88%] bg-black opacity-40 -z-0 scale-0 md:group-hover:scale-100"
+                ></div>
+              </div>
+              <div>
+                <h3 class="pt-2">Váy công sở</h3>
+                <p class="text-gray-400">$ <span>75</span></p>
+              </div>
+            </div>
+            <div class="swiper-slide h-full">
+              <div class="group overflow-hidden">
+                <img
+                  class="w-full h-[85%] object-cover"
+                  src="../img/women6.png"
+                  alt=""
+                />
+                <div
+                  class="absolute top-1 right-1 w-[30px] h-[70px] text-[14px]  bg-black md:w-[40px] md:h-[100px] text-white rounded-full opacity-90 flex justify-around items-center md:text-[18px] flex-col md:-top-28 md:right-[8px] md:opacity-70 transform duration-500 md:group-hover:top-2"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-cart-arrow-down"></i>
+                </div>
+                <div id="trenQuick"
+                  class="absolute w-[70%] h-[30px] md:invisible bottom-[20%] md:top-[79%] md:w-[80%] md:h-[40px] bg-amber-600 rounded-full flex justify-center transform left-1/2 -translate-x-1/2 md:group-hover:visible duration-500 md:group-hover:top-[70%] hover:bg-black hover:text-amber-600 z-10"
+                >
+                  <button class="text-[20px] md:text-2xl w-full pointer-events-none">
+                    <i class="fa-solid fa-eye pointer-events-none"></i>
+                  </button>
+                </div>
+                <div
+                  class="absolute top-0 left-0 w-full h-[88%] bg-black opacity-40 -z-0 scale-0 md:group-hover:scale-100"
+                ></div>
+              </div>
+              <div>
+                <h3 class="pt-2">Bộ âu</h3>
+                <p class="text-gray-400">$ <span>80</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next after:hidden relative">
+            <div
+              class="w-[28px] h-[28px] rounded-full border-2 border-black flex justify-center items-center bg-gray-100 md:bg-transparent opacity-60 absolute -top-[35px]"
+            >
+              <i class="fa-solid fa-angle-right text-black"></i>
+            </div>
+          </div>
+          <div class="swiper-button-prev after:hidden relative">
+            <div
+              class="w-[28px] h-[28px] rounded-full border-2 border-black flex justify-center items-center bg-gray-100 md:bg-transparent opacity-60 absolute -top-[35px]"
+            >
+              <i class="fa-solid fa-angle-left text-black"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--information  -->
+    <section>
+      <div class="grid grid-cols-1 p-2 mb-10 md:grid-cols-4 md:gap-3 md:my-[40px] ">
+        <div class="flex  items-center pb-3 border-b md:border-none md:bg-[#ddd] md:h-[150px] md:justify-center">
+          <i class="text-3xl  fa-solid fa-car-side"></i>
+          <div class="pl-[20px] pt-[20px]">
+            <h3 class="font-medium">FREE SHIPPING</h3>
+            <p class="text-gray-500">Free shipping on all US order or order above $100</p>
+          </div>
+        </div>
+        <div class="flex  items-center pb-3 border-b md:border-none md:bg-[#ddd] md:h-[150px] md:justify-center">
+          <i class="text-3xl pt-[16px] fa-solid fa-headset"></i>
+          <div class="pt-[20px] pl-[20px]">
+            <h3 class="font-medium">SUPPORT 24/7</h3>
+            <p class="text-gray-500">Contact us 24 hours a day, 7 days a week</p>
+          </div>
+        </div>
+        <div class="flex  items-center pb-3 border-b md:border-none md:bg-[#ddd] md:h-[150px] md:justify-center">
+          <i class="text-3xl pt-[20px] fa-solid fa-arrow-right-arrow-left"></i>
+          <div class="pl-[20px] pt-[20px]">
+            <h3 class="font-medium">30 DAYS RETURN</h3>
+            <p class="text-gray-500">Simply return it within 30 days for an exchange.</p>
+          </div>
+        </div>
+        <div class="flex  items-center pb-3 border-b md:border-none md:bg-[#ddd] md:h-[150px] md:justify-center">
+          <i class="text-3xl pt-[20px] fa-solid fa-credit-card"></i>
+          <div class="pl-[20px] pt-[20px]">
+            <h3 class="font-medium">100% PAYMENT SECURE</h3>
+            <p class="text-gray-500">We ensure secure payment with PEV</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <section>
+      <div class="">
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 p-2 md:bg-[#aaa] md:py-5 md:border-b">
+          <div class="text-center">
+            <p class="text-lg font-medium pb-2 md:text-[28px] ">Đăng ký để nhận được nhiều ưu đãi từ <span class="text-amber-600">Shop</span> </p>
+            <div class=" w-[90%] h-[40px] border-2 m-auto flex justify-between rounded-full md:w-[50%] md:mt-5">
+              <input class="focus:outline-none pl-2 w-[70%] rounded-full focus:ring-1" type="text" placeholder="Đăng ký tại đây" name="" id="">
+              <button class="bg-black w-[30%] text-white rounded-full">Đăng Ký</button>
+            </div>            
+          </div>
+          <div class="text-center pt-5 md:pt-0">
+            <p class="text-lg font-medium pb-1 md:text-[28px]">Những đối tác lớn của chúng tôi</p>
+            <div class=" w-[100%] md:w-[50%] md:mt-5 m-auto">
+              <div class="swiper mySwiper mySwiper1">
+                <div class="swiper-wrapper ">
+                  <div class="swiper-slide flex justify-center items-center"><img class="w-[40%] h-[40%] md:w-full md:h-full object-cover" src="../img/logo1.png" alt=""></div>
+                  <div class="swiper-slide flex justify-center items-center"><img class="w-[40%] h-[40%] md:w-full md:h-full object-cover" src="../img/logo2.png" alt=""></div>
+                  <div class="swiper-slide flex justify-center items-center"><img class="w-[40%] h-[40%] md:w-full md:h-full object-cover" src="../img/logo3.png" alt=""></div>
+                  <div class="swiper-slide flex justify-center items-center"><img class="w-[40%] h-[40%] md:w-full md:h-full object-cover" src="../img/logo4.png" alt=""></div>
+                  <div class="swiper-slide flex justify-center items-center"><img class="w-[40%] h-[40%] md:w-full md:h-full object-cover" src="../img/logo5.png" alt=""></div>
+                  <div class="swiper-slide flex justify-center items-center"><img class="w-[40%] h-[40%] md:w-full md:h-full object-cover" src="../img/logo6.png" alt=""></div>
+                  <div class="swiper-slide flex justify-center items-center"><img class="w-[40%] h-[40%] md:w-full md:h-full object-cover" src="../img/logo7.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="mt-5 bg-[#aaa] md:grid grid-cols-4 md:mt-0 md:pt-5">
+          <div class="p-2 border-b md:pl-[30px]">
+            <h3 class="text-orange-500 font-medium text-xl pb-4 md:text-[28px]">ShopDay</h3>
+            <div>
+              <div class="flex items-center pb-2">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="pl-2">378 Minh Khai, Ha Noi</p>
+              </div>
+              <div class="flex items-center pb-2">
+                <i class="fa-solid fa-envelope"></i>
+                <p class="pl-2">378@gmail.com</p>
+              </div>
+              <div class="flex items-center ">
+                <i class="fa-solid fa-phone"></i>
+                <p class="pl-2">123456789</p>
+              </div>
+            </div>
+          </div>  
+          <div class="p-2 border-b md:pl-[60px]">
+            <h3 class="text-orange-500 font-medium text-xl pb-4 md:text-[28px]">Hỗ trợ khách hàng</h3>
+            <div>
+              <p class="pb-2">Trung tâm bảo hành</p>
+              <p class="pb-2">Chính sách đổi hàng và bảo hành</p>
+              <p class="pb-2">Chi phí vận chuyển</p>
+              <p class="pb-2">Hướng dẫn mua hàng Online</p>
+              <p class="pb-2">Hướng dẫn bảo quản</p>
+            </div>
+          </div>    
+          <div class="p-2 border-b md:pl-[50px]">
+            <h3 class="text-orange-500 font-medium text-xl pb-4 md:text-[28px]">Thanh Toan</h3>
+            <div class="text-[28px]">
+              <i class="fa-brands fa-cc-visa pr-2"></i>
+              <i class="fa-solid fa-address-card pr-2"></i>
+              <i class="fa-brands fa-cc-jcb pr-2"></i>
+              <i class="fa-brands fa-cc-paypal"></i>
+            </div>
+          </div>        
+          <div class="p-2 border-b md:pl-[85px]">
+            <h3 class="text-orange-500 font-medium text-xl pb-4 md:text-[28px]">Nen Tang Khac </h3>
+            <div class="text-[28px]">
+              <i class="fa-brands fa-facebook pr-2"></i>
+              <i class="fa-brands fa-twitter-square pr-2"></i>
+              <i class="fa-brands fa-instagram-square pr-2"></i>
+              <i class="fa-brands fa-tiktok pr-2"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>        
+        </div>
+      </div>
+    </section>
+    <!-- Quick view -->
+    <section>
+      <div id="quickView" class="fixed transform top-0 scale-0 z-20 h-full bg-[#ddd] md:w-[50%] md:h-[80%] md:top-[10%] md:left-[25%] md:grid grid-cols-2 md:duration-500 md:transition-all ease-in">
+        <div id="quickImage" class="w-full h-[50%] md:h-full">
+          <img class="w-full h-full object-cover" src="/img/men1.png" alt="">          
+        </div>
+        <div class="relative p-2 md:pt-[50px] md:p-5">
+          <i id="closeQuick" class="fa-solid fa-xmark absolute -top-[115%] right-2 z-10 text-[25px] md:top-2 md:right-3 cursor-pointer"></i>
+          <h3 id="nameQuick" class="font-semibold text-lg md:text-[30px]">Áo phông</h3>
+          <h4 class="text-gray-400 md:text-[20px] md:pt-2">$ <span id="priceQuick">20</span></h4>
+          <p class="py-5 md:py-9">Đảm bảo vải chất lượng 100% cotton chuẩn xuất khẩu. Áo được kiểm tra kĩ càng, cẩn thận. Giao hàng ngay khi nhận được đơn. Hoàn tiền nếu sản phẩm không giống với mô tả. Chấp nhận đổi hàng khi size không vừa</p>
+          <div class="flex items-center">
+            <p class="font-semibold">Size:</p>
+            <p class="w-[20px] h-[20px] rounded-full bg-teal-400 flex justify-center items-center text-sm ml-2">S</p>
+            <p class="w-[20px] h-[20px] rounded-full bg-red-400 flex justify-center items-center text-sm ml-2">M</p>
+            <p class="w-[20px] h-[20px] rounded-full bg-purple-400 flex justify-center items-center text-sm ml-2">L</p>
+          </div>
+          <div class="flex items-center my-3 md:my-6">
+            <p class="font-semibold">Số Lượng:</p>
+            <input type="number" min="1" value="1" class="ml-2 w-[50px] focus:outline-none">
+          </div>
+          <div class="text-yellow-400">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="w-[50%] mx-auto mt-10 rounded-md bg-orange-500 py-2 flex justify-center md:mt-[50px]">
+            <button class="text-lg font-medium">Thêm Vào Giỏ Hàng</button>
+          </div>
+          <div class="hidden md:block my-[100px] text-center text-3xl">
+            <i class="fa-brands fa-facebook pr-2"></i>
+            <i class="fa-brands fa-twitter-square pr-2"></i>
+            <i class="fa-brands fa-instagram-square pr-2"></i>
+            <i class="fa-brands fa-tiktok pr-2"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>        
+        </div>
+      </div>
+    </section>
+    <!-- cart -->
+    <section>
+      <div class="w-[400px] h-full fixed top-0 bg-red-200 z-30">
+        <p class="text-center">ok</p>
+      </div>
+    </section>
+    <!-- js -->
+    <script src="tail.js "></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper1", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          "@0.00": {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          "@0.30": {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          "@0.60": {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          "@1.00": {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          "@0.00": {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          "@0.30": {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          "@0.60": {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          "@1.00": {
+            slidesPerView: 4,
+            spaceBetween: 50,
+            
+          },
+        },
+      });
+    </script>
+    <!--  -->
+    <script>
+      var swiper = new Swiper(".mySwiper2", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+  </body>
+</html>
